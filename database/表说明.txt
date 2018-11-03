@@ -1,0 +1,24 @@
+1.user
+  存储用户账号信息和一个organization_id标识所属机构
+
+2.organization
+  存储机构信息  用p_id标识机构间管理级别
+
+3.role
+  记录角色编号和角色名 一个角色对应一种权限
+
+4.user_role
+  标识用户和角色的多对多关系
+
+5.basic_info
+  记录用户基本个人信息，idcard记录身份证号作为主码，
+  user_id标识idcard和user.id的一对一关系
+
+6.f_personal_business
+  记录家属的个人信息
+  id作为自增的家属编号 user_id标识与user.id的多对一关系
+  另外两个以'f_'开头的表 均为家属的其他信息 与此表均为多对一关系
+
+7其他表
+  除了以上表之外的表均为 用户的其他信息
+  均设置一个自增id 和user_id标识与user.id的多对一关系
