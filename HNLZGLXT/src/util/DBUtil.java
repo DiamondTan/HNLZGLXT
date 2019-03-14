@@ -13,13 +13,12 @@ import java.sql.*;
 public class DBUtil {
 
 	static String user = "root";
-	static String password = "605204";
-	static String url = "jdbc:mysql://localhost:3306/hnlzglxt?useSSL=false&serverTimezone=GMT&useOldAliasMetadataBehavior=true";
+	static String password = "7421";
+	static String url = "jdbc:mysql://localhost:3306/hnlzglxt2?useSSL=false&serverTimezone=GMT&useOldAliasMetadataBehavior=true";
 
 	static {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			System.out.println("开始尝试连接数据库！");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -29,7 +28,6 @@ public class DBUtil {
 		Connection conn = null;
 		try {
 			conn = DriverManager.getConnection(url, user, password);
-			System.out.println("连接成功！");
 
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -1,47 +1,139 @@
-@charset "utf-8";
-/* CSS Document */
-.login_content{ width:700px; height:400px; position:absolute; left:600px; top:350px; background:#fff;}
-.page_name{ background:url(../images/page_name.png); width:700px; height:43px; margin:0 auto; margin-top:10px; font-size:22px; color:#1E9CAD;padding-top:7px;  text-indent:30px;}
-.login_l{padding-left:100px; width:700px;}
-.span1{float:left;margin:20px 0px;}
-.label {
-    background: url(../images/it-line03.png);
-    float: left;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 44px;
-    padding: 0 0 0 5px;
-    text-align: center;
-    width: 100px;
-
+div{
+	box-sizing: border-box;
 }
-.tn-textbox {
-    border: 0 none;
-    color: #999;
-    float: left;
-    font-size: 20px;
-    height: 44px;
-    line-height: 44px;
-    width: 273px;
+.login_out{ background-color:rgba(236, 240, 241, 0.71);
+	margin:18px auto 30px auto;
+	padding: 30px;	
+	font-family:??;
+	border:0.6px solid  rgba(221, 221, 221, 1);
+	border-radius:10px;}
+.login{
+width: 900px;
+height: 360px;
+background: #FFFC;
+background:rgba(255, 255, 255, 0.8);
+margin: 0px auto;
+border-radius: 0 0 5px 5px;
+}
+.c1{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+.login_left{
 	
 }
-.button {
-    border-top: 1px dashed #ddd;
-    padding: 30px 0 0 100px;
-    text-align: center;
-	margin-top:30px;
-	width:600px;
-	clear:both;
+.login_right{
+	width: 420px;
+    *width: 290px;
+    height: 300px;
+    margin-top: 40px;
+    padding: 0 65px 0px 65px;
+    border-left: 1px solid #EEEEEE;
+
 }
-.tn-button-text{background: url(../images/it-button.png) no-repeat -205px -9px;
-	width:145px;height:43px;
-	font-size: 20px;
+.span1{margin:15px 0px 0px 0px;}
+
+.login_1{
+	text-align:left;
+	padding:1px 25px;
+	margin: 40px auto auto 55px;
+}
+
+.login_title_text{
+font-weight: bold;
+width: 900px;
+height: 66px;
+padding-left: 74px;
+line-height: 66px;
+font-size: 20px;
+color: #CC0000;
+background: #FFFC;
+background:rgba(255, 255, 255, 0.8);
+margin: 5px auto;
+font-weight: bold;
+border-radius: 5px 5px 0 0;
+}
+.tn_form_label {
+	float:left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 32px;
+    width: 80px;
+	    font-size: 18px;
+    color: #CC0000;
+    font-weight: bold;
+}
+.tn_form_label_login_title{
+	text-align:center;
+}
+.tn_textbox {
+    color: #999;
+    font-size: 18px;
+    height: 40px;
+    line-height: 32px;
+    padding: 0 5px;
+    width: 230px;border-radius: 5px;border:0.5px solid;
+}
+.tn_textbox-long{
+	width:70px;height:27px;border-radius: 5px;border:0.5px solid;
+	font-size: 16px;
 	line-height:43px;
 	font-weight: bold;
 	display:inline-block;
-	margin-left:150px;
 	padding: 0 10px;
-	color:white;
-	border:none;
+	color:#c0c0c0;}
+.tn_form_row_botton{
 	text-align:center;
+}
+
+.tn_button_text{
+	height:42px;
+	width:240px;
+	text-align:center;
+	color:white;
+	background-color:#CC0000;
+	border-radius: 10px;
+	border:none;
+}
+.tn_remember_me{
+
+}
+.login-bg{
+	background:url(../images/login_bg02.jpg) no-repeat center;
+	background-size:100% 100%;
+	padding:30px;
+	margin:0;
+}
+
+/**”“≤‡¿∏*/
+.question {
+
+    font-size: 18px;
+    color: #CC0000;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+.queitem {
+
+    margin-bottom: 10px;
+
+}
+.quetitle {
+
+    height: 40px;
+    line-height: 40px;
+    background: #f4f4f4;
+    padding-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+
+}
+.quecon {
+
+    padding: 10px;
+    border: 1px dashed #dddddd;
+    display: none;
+    color:#5a5757;
 }
